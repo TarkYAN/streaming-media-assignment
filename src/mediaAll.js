@@ -8,7 +8,8 @@ const streamMedia = (request, response, filePath, contentType) => {
     if (err) {
       if (err.code === 'ENOENT') {
         response.writeHead(404);
-      } else {
+      } 
+      else {
         response.writeHead(500);
       }
       return;
